@@ -1,0 +1,321 @@
+@font-face {
+    font-family: good;
+    src: url(asset/GeneralSans-Medium.otf);
+}
+
+*{
+    font-family: good;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.landpage{
+    background: url(asset/Background.png);
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: none;
+    background-size: 100% 100%;
+    overflow:hidden;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    height: 150px;
+    justify-content: space-between;
+    max-width: min(1130px,80vw);
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.navitem{
+    height: 40px;
+    display: flex;
+    font-size: 13px;
+    list-style: none;
+    background-color:rgba(111, 68, 54, 0.8);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 800;
+}
+#li{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    /* background-color: white; */
+}
+#li:hover{
+    background-color: rgba(207, 201, 201, 0.687);
+}
+.menubtn{
+    height: 30px;
+    position: absolute;
+    right:25px ;
+    top: 43px;
+    display: none;
+}
+.navbtn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(5, 4, 4);
+    font-size: 13px;
+    position: absolute;
+    z-index: 700;
+    right: 0;
+}
+.navbtn:hover{
+    background-color: rgba(111, 68, 54, 0.8);
+}
+
+.mainitem{
+    /* background-color: yellow; */
+    display: flex;
+    height: 400px;
+    width: min(1053px,76vw);
+    margin: 50px auto;
+    position: relative;
+
+}
+.mainitem-text{
+    /* background-color: #813441; */
+    width: 60%;
+}
+.text{
+    font-size: 3.2rem;
+    margin-top: 60px;
+
+}
+.text2{
+    margin-top: 14px;
+    max-width: 400px;
+}
+.cake_imege{
+    position: absolute;
+    height:628px;
+    /* width: 773px; */
+    bottom: 5px;
+    right: 216px;
+    bottom: 255px;
+    transform: translate(50% ,50%);
+}
+.btn{
+    margin-top: 35px;
+    margin-bottom: 20px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+    
+}
+.btn button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.btn button:hover{
+    background-color: rgba(111, 68, 54, 0.8);
+}
+.btn :nth-child(2){
+    /* background-color: red; */
+    padding: 9px 10px;
+    gap: 2px;
+}
+
+
+
+/* about */
+
+.about{
+    width: 100%;
+    min-height:100vh ;
+    background-color:rgba(255, 248, 214, 0.6) ;
+}
+
+.aboutitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aboutimg{
+    height: min(500px , 40vw);
+}
+.secondtext{
+    font-size: 20px;
+}
+
+.aboutinfo{
+
+}
+.aboutinfo p{
+    opacity: .7;
+
+}
+.aboutinfo h2{
+    margin-top: 130px;
+    font-size: 40px;
+}
+.aboutbtn{
+    margin-top: 30px;
+}
+.aboutbtn button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.aboutbtn button:hover{
+    color: white;
+    background-color: rgba(106, 64, 40, 1);
+}
+
+@media (max-width:1120px) {
+
+    .nav{
+        max-width: 95%;
+        /* background-color: red; */
+    }
+    .mainitem{
+        width: 90%;
+    }
+    .cake_imege{
+        height: 466px;
+        right: 18vw;
+    }
+    .text{
+        font-size: 2.4rem;
+    }
+}
+@media (max-width:750px) {
+    .aboutinfo h2{
+        font-size: 30px;
+    }
+    .aboutinfo p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:700px) {
+    .menubtn{
+        display: block;
+        z-index: 999;
+    }    
+    .navbtn{
+        right: 70px;
+        top: 40px;
+    }
+    .nav{
+        width: 100%;
+        margin: 0;
+        position: inherit;
+    }
+    .navitem{
+        width: 100%;
+        top: 0;
+        border-radius: 0px;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        transition: all ease .3s;
+        /* display: none; */
+    }
+    .nav ul li{
+        width: 100%;
+        justify-content: center;
+        height: 45px;
+    }
+    .logo{
+        position: absolute;
+        z-index: 999;
+        height: 120px;
+        left:10px ;
+        top: 1px;
+    }
+    .erase{
+        transform: translateX(100%);
+    }
+    .mainitem{
+        margin: 0 0;
+        width: 100%;
+        height: fit-content;
+    }
+    .mainitem-text{
+        /* margin-left:50% ; */
+        /* transform: translate(-50% ,0 ); */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cake_imege{
+        top: -13vh;
+        transform: translate(-50%,0);
+        left: 50%;
+        height: min(120vw,54vh);
+
+    }
+    .nav{
+        width: 100%;
+    }
+    .logo{
+        left: -2px;
+    }
+    .text{
+        margin-top: min(278px ,70vw);
+        font-size: min(38px , 7vw);
+        width: 100%;
+        display: flex;
+        /* align-content: center; */
+        justify-content: center;
+        /* background-color: red; */
+    }
+    .text2{
+        font-size: 14px;
+        width: 70%;
+        opacity: .7;
+    }
+
+    /* about */
+
+    .aboutitem{
+        flex-direction: column;
+        margin: 0;
+    }
+    .aboutinfo{
+        width: 90%;
+    }
+    .aboutinfo h2{
+        margin-top: 10px;
+    }
+    .aboutimg{
+        height: 60vw;
+    }
+    .aboutinfo h2{
+        font-size: 8vw;
+        margin-left: 3vw;
+    }
+    
+    .aboutinfo p{
+        margin-left: 2vw;
+    }
+    .secondtext{
+        font-size: 5vw;
+    }
+    .aboutbtn{
+        display: flex;
+        justify-content: center;
+    }
+}
+ 
