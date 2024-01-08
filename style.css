@@ -88,7 +88,7 @@ body{
     display: flex;
     height: 400px;
     width: min(1053px,76vw);
-    margin: 14vh auto;
+    margin: 9vh auto;
     position: relative;
 
 }
@@ -310,7 +310,7 @@ body{
     }    
     .navbtn{
         position: absolute;
-        right: 56px;
+        right: 0px;
         top: 29px;
     }
     .nav{
@@ -365,17 +365,26 @@ body{
         /* margin: 0 0; */
         width: 100%;
         height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 0;
+        position: absolute;
+        top: 0;
+        /* justify-content: center; */
     }
     .mainitem-text{
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
+        
     }
     .cake_imege{
-        top: -20vh;
-        transform: translate(-50%,0);
-        left: 50%;
+        /* top: -20vh; */
+        transform: translate(0 , 0);
+        /* left: 50%; */
+        position: inherit;
         height: min(120vw,54vh);
 
     }
@@ -384,13 +393,13 @@ body{
     }
 
     .text{
-        margin-top: min(278px ,70vw);
+        /* margin-top: min(278px ,70vw); */
         font-size: min(38px , 7vw);
         width: 100%;
         display: flex;
-        /* align-content: center; */
         justify-content: center;
-        /* background-color: red; */
+        margin-top: 0;
+
     }
     .text2{
         font-size: 14px;
