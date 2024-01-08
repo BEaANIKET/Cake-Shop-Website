@@ -12,8 +12,8 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 100%;
-    overflow-x: hidden;
+    max-width: 100vh;
+    overflow: hidden;
 }
 .landpage{
     background: url(asset/Background.png);
@@ -210,7 +210,7 @@ body{
     display: grid ;
     place-items: center;
     width: min(800px,90%);
-    height:500px ;
+    height:fit-content ;
     grid-template-rows: 1;
     grid-template-columns: repeat(3,250px);
     overflow-x: scroll;
@@ -441,7 +441,6 @@ body{
 }
  
 @media (max-width:530px) {
-    
     .more1{
       display: none;
     } 
