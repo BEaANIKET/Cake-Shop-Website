@@ -207,12 +207,13 @@ body{
     align-items: center;
 }
 .manuitem{
-    display: flex ;
-    width: 90%;
+    display: grid ;
+    place-items: center;
+    width: min(800px,90%);
     height:500px ;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(3,250px);
+    overflow-x: scroll;
     gap: 15px;
     margin-top: 40px;
     position: relative;
@@ -273,6 +274,13 @@ body{
 .more{
     width: fit-content;
     cursor: pointer;
+}
+
+.more2{
+    display: none;
+  } 
+.more1{
+    display: block;
 }
 @media (max-width:1120px) {
 
@@ -433,9 +441,12 @@ body{
 }
  
 @media (max-width:530px) {
-    .manuitem{
-        flex-direction: column;
+    
+    .more1{
+      display: none;
+    } 
+    .more2{
+        display: block;
     }
-    
-    
+     
 }
