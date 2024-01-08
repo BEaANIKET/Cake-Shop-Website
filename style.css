@@ -3,6 +3,8 @@
     src: url(asset/GeneralSans-Medium.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
 *{
     font-family: good;
     margin: 0;
@@ -20,6 +22,16 @@ body{
     background-repeat: none;
     background-size: 100% 100%;
     overflow:hidden;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+
+
 }
 .nav{
     display: flex;
@@ -49,6 +61,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0 18px;
+    height: 100%;
     /* background-color: white; */
 }
 #li:hover{
@@ -178,6 +191,87 @@ body{
     background-color: rgba(106, 64, 40, 1);
 }
 
+
+/* manu section  */
+
+.manu{
+    background-image: url(asset/Background3.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.manuitem{
+    display: flex ;
+    width: 100%;
+    height: ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    position: relative;
+}
+.mentitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: min(16vw,64px);
+    font-family: 'Inika', serif;
+    color: rgba(106, 64, 40, 1); 
+
+}
+.card{
+    width: 250px;
+    min-height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(251, 250, 228);
+    border: 3px solid black;
+    position:relative;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manutext{
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+        width: 100%;
+}
+#foodname{
+    font-size: 20px;
+}
+#foodabout{
+    font-size: 13px;
+    opacity: .7;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+}
+#price{
+    font-size: 20px;
+}
+#price span{
+    color: green;
+}
+.star{
+    font-size: 34px;
+}
+.more{
+    width: fit-content;
+    cursor: pointer;
+}
 @media (max-width:1120px) {
 
     .nav{
@@ -226,7 +320,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
         font-size: 20px;
         transition: all ease .3s;
         /* display: none; */
@@ -235,6 +329,10 @@ body{
         width: 100%;
         justify-content: center;
         height: 45px;
+    }
+    .nav a{
+        width: 100%;
+        height: fit-content;
     }
     .logo{
         position: absolute;
@@ -317,5 +415,24 @@ body{
         display: flex;
         justify-content: center;
     }
+
+    /* manu */
+    .card{
+        width: 250px;
+        min-height: 280px;
+    }
+    #foodname{
+        font-size: 20px;
+    }
+    #foodabout{
+        font-size:11px;
+    }
 }
  
+@media (max-width:530px) {
+    .manuitem{
+        flex-direction: column;
+    }
+    
+    
+}

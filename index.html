@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheesCake</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="asset/logo.svg">
-    
+    <link rel="icon" href="asset/logo.svg">   
 </head>
-<body>
-    
-     <div class="landpage">
+<body> 
+     <div class="landpage" id="home">
            
            <div class="nav">
                <img class="logo" src="asset/logo.svg" height="165px" alt="">
                <ul class="navitem erase">
-                   <li id="li" >Home</li>
-                   <li id="li">About Us</li>
-                   <li id="li">Menu</li>
-                   <li id="li">Contect</li>
+                   <a href='#home'><li id="li" >Home</li></a>
+                   <a href="#about"><li id="li">About Us</li></a>
+                   <a href="#manu"><li id="li">Menu</li></a>
+                   <a href=""><li id="li">Contect</li></a>
                </ul>
                <img class="menubtn" src="asset/menu.png" alt="">
                <div class="navbtn">Sign In</div>
@@ -42,7 +40,7 @@
            </div>
     </div>
     
-    <div class="about">
+    <div class="about" id="about">
            <div class="aboutitem">
                <div class="aboutimage">
                  <img class="aboutimg" src="asset/Imageabout.png" alt="">  
@@ -55,6 +53,57 @@
                    </div>
                </div>
            </div>
+    </div> 
+
+    <div class="manu" id="manu">
+        <div class="mentitle">
+            <p>Our Menu </p>
+        </div>
+        <div class="manuitem">
+            <div class="card">
+                <div class="img">
+                    <img src="asset/Blueberry Cheesecake Image.png" width="150px" alt="">
+                </div>
+                <div class="manutext">
+                    <div id="foodname">Blueberry Cheesecake</div>
+                    <div id="foodabout">Blueberry love, cheesecake delight!</div>
+                    <div class="price">
+                        <div id="price"><span>$</span>9.00</div>
+                        <div class="star">*****</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="asset/cheesecake2.png" width="150px" alt="">
+                </div>
+                <div class="manutext">
+                    <div id="foodname">Biscoff Cheesecake</div>
+                    <div id="foodabout">Biscoff adores cheesecake magic</div>
+                    <div class="price">
+                        <div id="price"><span>$</span>11.00</div>
+                        <div class="star">*****</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" >
+                <div class="img">
+                    <img src="asset/cheesecake3.png" width="150px" alt="">
+                </div>
+                <div class="manutext">
+                    <div id="foodname">Chocolate Cheesecake</div>
+                    <div id="foodabout">Cherish Chocolate, relish cheesecake magic!</div>
+                    <div class="price">
+                        <div id="price"><span>$</span>10.00</div>
+                        <div class="star">*****</div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                View More....
+            </div>
+        </div>
+        
     </div>
 
 </body>
