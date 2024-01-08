@@ -158,6 +158,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 90%;
+    margin: auto;
 }
 
 .aboutimg{
@@ -206,8 +208,8 @@ body{
 }
 .manuitem{
     display: flex ;
-    width: 100%;
-    height: ;
+    width: 90%;
+    height:500px ;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -390,6 +392,7 @@ body{
     .aboutitem{
         flex-direction: column;
         margin: 0;
+        width: 100%;
     }
     .aboutinfo{
         width: 90%;
