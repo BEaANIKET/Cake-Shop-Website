@@ -6,38 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show More Button</title>
     <style>
-        #options-container {
-            display: none;
-            margin-top: 10px;
+        .container {
+          width: 200px; /* Set the width of your container */
+          border: 1px solid #ccc;
+          padding: 10px;
         }
-    </style>
+      
+        .auto-fit-text {
+          font-size: 1em; /* Set a base font size */
+          overflow: hidden;
+          text-overflow: ellipsis; /* Optionally, use ellipsis for text overflow */
+          white-space: nowrap; /* Prevent text from wrapping */
+        }
+      </style>
 </head>
 <body>
-
-    <button id="showMoreBtn" onclick="toggleOptions()">Show More</button>
-    
-    <div id="options-container">
-        <p>Option 1</p>
-        <p>Option 2</p>
-        <p>Option 3</p>
-        <p>Option 4</p>
-        <p>Option 5</p>
-    </div>
-
-    <script>
-        function toggleOptions() {
-            var optionsContainer = document.getElementById('options-container');
-            var showMoreBtn = document.getElementById('showMoreBtn');
-
-            if (optionsContainer.style.display === 'none') {
-                optionsContainer.style.display = 'block';
-                showMoreBtn.textContent = 'Show Less';
-            } else {
-                optionsContainer.style.display = 'none';
-                showMoreBtn.textContent = 'Show More';
-            }
-        }
-    </script>
+     
+      <div class="container">
+        <div class="auto-fit-text">Your dynamic text hey my name is aniket  goes here</div>
+      </div>
+      
 
 </body>
 </html>

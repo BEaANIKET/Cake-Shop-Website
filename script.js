@@ -36,11 +36,11 @@ allData.forEach((element, i) => {
     let maininfo = document.createElement('div');
     maininfo.classList.add('manuinfo');
     
-    let manuinfo_name = document.createElement('div');
+    let manuinfo_name = document.createElement('span');
     manuinfo_name.id ='manuinfo-name';
     manuinfo_name.innerText=allData[i].name;
 
-    let maininfo_about = document.createElement('div');
+    let maininfo_about = document.createElement('span');
     maininfo_about.id ='maininfo-about';
     maininfo_about.innerText=allData[i].about;
 
@@ -60,8 +60,13 @@ allData.forEach((element, i) => {
     maininfo_price.appendChild(itemprice);
     maininfo_price.appendChild(rating);
     
-    maininfo.appendChild(manuinfo_name);
-    maininfo.appendChild(maininfo_about);
+    let Text = document.createElement('div');
+    Text.classList.add('Text');
+
+    Text.appendChild(manuinfo_name);
+    Text.appendChild(maininfo_about);
+
+    maininfo.appendChild(Text);
     maininfo.appendChild(maininfo_price);
 
     manucard.appendChild(imege);
@@ -69,5 +74,3 @@ allData.forEach((element, i) => {
 
     containeritem.appendChild(manucard);
 });
-;
-

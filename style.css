@@ -273,6 +273,12 @@ body{
     text-decoration: none;
     color: black;
 } 
+.more2 {
+    color: rgb(5, 4, 4);
+}
+.more {
+    color: rgb(1, 0, 0);
+}
 .more1{
     display: block;
     text-decoration: none;
@@ -315,9 +321,7 @@ body{
         top: 29px;
     }
     .nav{
-        /* width: 100%;
-        margin: 0;
-        position: inherit; */
+       height: 90px;
     }
     .navitem{
         position: absolute;
@@ -445,8 +449,16 @@ body{
     .filterbtn{
         position: absolute;
     }
+    .containeritem{
+        margin-top: 0;
+    }
+
 }
- 
+@media (max-width: 700px) {
+    .containeritem {
+      margin-top: 0;
+    }
+  }
 @media (max-width:530px) {
     .more1{
       display: none;
@@ -463,7 +475,7 @@ body{
     width: 100%;
     min-height: 100vh;
     background-image: url(asset/Background.png);
-    background-size: 100% 100%;
+    background-size: max(1200px,100%) max(1200px ,100%);
     background-repeat: no-repeat;
     /* align-items: center */
     
@@ -488,30 +500,41 @@ body{
     background-color: rgb(254, 249, 192);
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
 }
 .manuinfo{
     padding: 0 10px;
     width: 100%;
+    position: absolute;
+    bottom: 14px;
 }
 #manuinfo-name{
     font-size: 1.4rem;
-    height: 33px;
-    overflow-x: scroll;
-    /* height: ; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#manuinfo-name:hover{
+    white-space: normal;
+    /* background-color: red; */
 }
 #maininfo-about{
     font-size: .7rem;
     opacity: .7 ;
-    width: 100%;
-    height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
+}
+
+#maininfo-about:hover{
+    white-space: normal;
 }
 .maininfo-price{
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 0 30px; */
-    font-size: 30px;
+    font-size: 24px;
     padding-top: 3px;
 }
 
@@ -536,4 +559,15 @@ body{
 }
 .imege img{
     height: 120px;
+}
+.Text{
+    width: 100%;
+    max-height: 50px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+.Text:hover{
+    max-height: fit-content;
 }
