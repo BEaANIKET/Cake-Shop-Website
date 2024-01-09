@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show More Button</title>
+    <style>
+        #options-container {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="showMoreBtn" onclick="toggleOptions()">Show More</button>
+    
+    <div id="options-container">
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+        <p>Option 4</p>
+        <p>Option 5</p>
+    </div>
+
+    <script>
+        function toggleOptions() {
+            var optionsContainer = document.getElementById('options-container');
+            var showMoreBtn = document.getElementById('showMoreBtn');
+
+            if (optionsContainer.style.display === 'none') {
+                optionsContainer.style.display = 'block';
+                showMoreBtn.textContent = 'Show Less';
+            } else {
+                optionsContainer.style.display = 'none';
+                showMoreBtn.textContent = 'Show More';
+            }
+        }
+    </script>
+
+</body>
+</html>
+

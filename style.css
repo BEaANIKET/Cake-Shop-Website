@@ -2,9 +2,6 @@
     font-family: good;
     src: url(asset/GeneralSans-Medium.otf);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
-
 *{
     font-family: good;
     margin: 0;
@@ -194,7 +191,7 @@ body{
 .manu{
     background-image: url(asset/Background3.png);
     background-size: 100% 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -206,7 +203,6 @@ body{
     place-items: center;
     width: min(800px,90%);
     height:fit-content ;
-    grid-template-rows: 1;
     grid-template-columns: repeat(3,250px);
     overflow-x: scroll;
     gap: 15px;
@@ -273,9 +269,14 @@ body{
 
 .more2{
     display: none;
-  } 
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+} 
 .more1{
     display: block;
+    text-decoration: none;
+    color: black;
 }
 @media (max-width:1120px) {
 
@@ -331,15 +332,6 @@ body{
         grid-template-rows: repeat(4 , 40px);
         transform:translateY(-100%);
         transition: all ease .3s;
-    }
-    .navitem1{
-        /* position: absolute;
-        z-index: 990;
-        height: 100vh;
-        width: 100vw;
-        top: 0;
-        overflow: hidden; */
-        /* background-color: red; */
     }
     .nav ul li{
         width: 100vw;
@@ -450,6 +442,9 @@ body{
     #foodabout{
         font-size:11px;
     }
+    .filterbtn{
+        position: absolute;
+    }
 }
  
 @media (max-width:530px) {
@@ -460,4 +455,85 @@ body{
         display: block;
     }
      
+}
+
+
+/*  more menu  */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(asset/Background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* align-items: center */
+    
+
+}
+.containeritem{
+    max-width: 1040px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.menucard{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(254, 249, 192);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.manuinfo{
+    padding: 0 10px;
+    width: 100%;
+}
+#manuinfo-name{
+    font-size: 1.4rem;
+    height: 33px;
+    overflow-x: scroll;
+    /* height: ; */
+}
+#maininfo-about{
+    font-size: .7rem;
+    opacity: .7 ;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+.maininfo-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 30px; */
+    font-size: 30px;
+    padding-top: 3px;
+}
+
+.filterbtn{
+    right: 40px;
+    top: 30px;
+    border: 1px solid black;
+    padding: 3px 9px;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.filterbtn:hover{
+    background-color: rgba(106, 64, 40, 1);
+    color: white;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.imege img{
+    height: 120px;
 }
