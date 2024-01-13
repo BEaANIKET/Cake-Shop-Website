@@ -272,17 +272,13 @@ body{
     cursor: pointer;
     text-decoration: none;
     color: black;
+    
 } 
-.more2 {
-    color: rgb(5, 4, 4);
-}
-.more {
-    color: rgb(1, 0, 0);
-}
 .more1{
     display: block;
     text-decoration: none;
     color: black;
+    
 }
 @media (max-width:1120px) {
 
