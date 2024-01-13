@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -31,27 +31,53 @@
             <img class="menubtn" src="asset/menu.png" alt="" />
             <div class="filterbtn">Filter</div>
         </div>
-        <div class="containeritem">
-            <!-- <div class="menucard">
-                <div class="imege">
-                    <img src="cake/cake1.png" alt="" />
-                </div>
-                <div class="manuinfo">
-                    <div class="Text">
-                        <span id="manuinfo-name">Blueberry Cheesecake</span><br>
-                        <span id="maininfo-about">Blueberry love, cheesecake delight!</span>
+        <div class="contaiermainitem">
+            <div class="containeritem">
+                <!-- <div class="menucard">
+                    <div class="imege">
+                        <img src="cake/cake1.png" alt="" />
                     </div>
-                    <div class="maininfo-price">
-                        <div id="itemprice"><span>$</span>9.00</div>
-                        <div class="rating">*****</div>
+                    <div class="manuinfo">
+                        <div class="Text">
+                            <span id="manuinfo-name">Blueberry Cheesecake</span><br>
+                            <span id="maininfo-about">Blueberry love, cheesecake delight!</span>
+                        </div>
+                        <div class="maininfo-price">
+                            <div id="itemprice"><span>$</span>9.00</div>
+                            <div class="rating">*****</div>
+                        </div>
                     </div>
+                </div> -->
+            </div>
+            <div class="filterbox">
+                <div class="filter_rate">
+                    <p>STAR</p>
+                    <ul>
+                        <li class="filter_star">2 Star</li>
+                        <li class="filter_star">4 star</li>
+                        <li class="filter_star">6 star</li>
+                    </ul>
                 </div>
-            </div> -->
-        </div>
-        <div class="filterbox">
-            <ul>
-                li*
-            </ul>
+                <div class="filter_price">
+                    <p>PRICE</p>
+                    <ul>
+                        <div class="min">
+                            <p>MIN</p>
+                            <input class="price_min" value="0" min="0" max="10" type="range"/>
+                            <span id="price_value">0</span>
+                        </div>
+                        <div class="max">
+                            <p>MAX</p>
+                            <input class="price_max" min="0" max="10" value="10" type="range"/>
+                            <span id="price_value">10</span>
+                        </div>
+                    </ul>
+                </div>
+                <div class="filter_btn">
+                    <button>Cancel</button>
+                    <button class="apply">Apply</button>
+                </div>
+            </div>
         </div>
     </div>
 
