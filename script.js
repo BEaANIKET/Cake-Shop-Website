@@ -143,4 +143,4 @@ let renderFilterData = function(filterAllData){
     });
 }
 
-// renderFilterData(allData);
+renderFilterData(allData);
