@@ -311,6 +311,14 @@ body{
 }
 
 @media (max-width:700px) {
+
+    .filterbox{
+        position: absolute;
+        height: 70vh;
+        z-index: 1000;
+        background-color: rgb(240, 229, 229);
+    }
+
     .menubtn{
         display: block;
         z-index: 999;
@@ -453,6 +461,7 @@ body{
         margin-top: 0;
     }
 
+
 }
 @media (max-width: 700px) {
     .containeritem {
@@ -482,7 +491,7 @@ body{
 
 }
 .containeritem{
-    max-width: 1040px;
+    width: 100%;
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -570,4 +579,78 @@ body{
 }
 .Text:hover{
     max-height: fit-content;
+}
+.contaiermainitem{
+    display: flex;
+    max-width: min(100%,1390px);
+    margin: auto;
+    /* background-color: red; */
+}
+.filterbox{
+    /* height: 400px; */
+    width: 300px;
+    background-color: rgb(240, 229, 229);
+    /* position: absolute; */
+    right: 0;
+    top: 90px;
+    color: rgb(3, 3, 3);
+    z-index: 999;
+    border-radius: 20px;
+    overflow: hidden;
+    /* display: none; */
+    /* transform: translateX(100%); */
+
+}
+.filter_rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* margin-top: 20px; */
+    padding: 20px 0;
+}
+.filter_rate ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: 20px;
+}
+.filter_star{
+    border: 1px solid black;
+    padding: 2px 4px;
+    border-radius: 20px;
+
+}
+.filter_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 30px; */
+    border: 1px solid rgb(247, 255, 198);
+    background-color: #fbffe496;
+}
+.min ,.max{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#price_value{
+    /* background-color: red;
+    width: 50px; */ 
+}
+
+.display_none{
+    display: none;
+}
+.filter_btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter_btn button{
+    padding: 2px 6px;
+    border-radius: 20px;
+    height: 30px;
+
 }
