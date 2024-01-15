@@ -13,6 +13,8 @@ let allData = [
     { src:'cake/cake5.png' , rating:3 ,name:'Chocolate Suicide' ,about:'Four fabulous layers of soft and moist chocolate cake' ,price:5.00,},
     { src:'cake/cake6.png' , rating:2 ,name:'Coca Cola Cake' ,about:'This trademark cola in cake form' ,price:7.00,},
     { src:'cake/cake7.png' , rating:5 ,name:'Death By Chocolate' ,about:'Fabulous and flourless, dark chocolate ganache cake.' ,price:8.00,},
+    { src:'cake/cake7.png' , rating:5 ,name:'Death By Chocolate' ,about:'Fabulous and flourless, dark chocolate ganache cake.' ,price:8.00,},
+    { src:'cake/cake7.png' , rating:5 ,name:'Death By Chocolate' ,about:'Fabulous and flourless, dark chocolate ganache cake.' ,price:8.00,},
     
 ]
 let filter = document.querySelector('.filterbtn');
