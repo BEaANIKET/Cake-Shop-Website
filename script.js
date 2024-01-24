@@ -73,8 +73,6 @@ let apply = document.querySelector('.apply');
 apply.addEventListener('click',function(){
     filterAllData = [];
     filterAllData = allData.filter( (item)=>{
-        console.log(star);
-        console.log(min,max);
         return (item.price>=min && item.price<=max && item.rating<=star);
     })
     renderFilterData(filterAllData);
